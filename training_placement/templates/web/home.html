@@ -1,0 +1,445 @@
+{% load static %}
+{% csrf_token %}
+{% static "" as baseURL %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Training and Placement Cell</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'web_css/bootstrap.min.css' %}" rel='stylesheet' type='text/css' />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome.css' %}" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{% static 'web_css/style.css' %}" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{% static 'web_css/owl.css' %}" rel='stylesheet' type='text/css' />
+    
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+   <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-envelope"></i>contact@company.com</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>123-456-7890</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/web_index"><h2>Training And <em>Placement Cell</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/web_index/">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/web_job/" data-aos="fade-right">Jobs</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Details</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/web_campus/">Campus Details</a>
+                    <a class="dropdown-item" href="/web_company/">Company Details</a>
+                    <a class="dropdown-item" href="/web_placement/">Placement Details</a>
+                    <a class="dropdown-item" href="/web_study/">Study Material</a>
+                    <a class="dropdown-item" href="/web_workshop/">Workshop Details</a>
+                    <a class="dropdown-item" href="/test/">Take Test</a>
+                    <a class="dropdown-item" href="/result/">Test Result</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/web_about/">About Us</a>
+                    <a class="dropdown-item" href="/web_news/">News</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/web_contact/">Contact Us</a>
+              </li>
+
+              
+
+               <li class="nav-item">
+                <a class="nav-link" href="/web_logout/">Logout</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h4>The Best way to predict the future is to create it</h4>
+                  <!-- <h4>Quam temporibus accusam <br> hic ducimus quia</h4>
+                  <p>Magni deserunt dolorem consectetur adipisicing elit. Corporis molestiae optio, laudantium odio quod rerum maiores, omnis unde quae illo.</p> -->
+                  <!-- <a href="jobs.html" class="filled-button">Jobs</a> -->
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <!-- <h6>magni deserunt dolorem harum quas!</h6> -->
+                  <h4>The Best way to predict the future is to create it</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At culpa cupiditate mollitia adipisci assumenda laborum eius quae quo excepturi, eveniet. Dicta nulla ea beatae consequuntur?</p> -->
+                  <!-- <a href="about.html" class="filled-button">About Us</a> -->
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-3">
+            <div class="img-fill">
+                <div class="text-content">
+                  <!-- <h6>alias officia qui quae vitae natus!</h6> -->
+                  <h4>The Best way to predict the future is to create it</h4>
+                  <!-- <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p> -->
+                  <!-- <a href="/web_contact/" class="filled-button">Contact Us</a> -->
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <span>Training and Placement Cell is smart web application used to find the placements around you and this application allows you to directly apply for the drive and the company who is conducting the drive will see your request and if they interested in your profile they will accept the request. The Placement Cell plays a crucial role in locating job opportunities for Under Graduates and Post Graduates passing out from the college by keeping in touch with reputed firms and industrial establishments. The Placement Cell operates round the year to facilitate contacts between companies and graduates. Training and Placement Cell is to guide students to choose right career and to give knowledge, skill, and aptitude and meet the manpower requirements of the Industry.</span>
+            <span style="font-size: 45px; text-align: center;"><span style="text-align: center; color: white !important; font-size: 115px !important; font-weight: bolder !important; position: relative; bottom: 10px;">T&P Cell  </span>
+          </span>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+             <div class="col-lg-6 col-sm-6">
+                <div class="what-we-do-item mt-30">
+                   <img src="{% static 'images/tcp1.jpg' %}" alt="Image">
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2> <em>Find your dream Jobs</em></h2>
+              <!-- <span>Aliquam id urna imperdiet libero mollis hendrerit</span> -->
+            </div>
+          </div>
+
+          <div class="row" id="job">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="fun-facts">
+      <div class="container">
+        <div class="more-info-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-image">
+                <img src="{% static 'images/placement_cell2.jpg' %}" class="img-fluid" alt="" style="width: 468px;">
+              </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+              <div class="right-content">
+                <span>Who we are</span>
+                <h2>Get to know about <em>Our Collge</em></h2>
+                <p>A college is an educational institution or a constituent part of one. A college may be a degree-awarding tertiary educational institution, a part of a collegiate or federal university, an institution offering vocational education, or a secondary school. Usually a college campus includes libraries, lecture halls, residence halls, student centers or dining halls, and park-like settings. A modern campus is a collection of buildings and grounds that belong to a given institution, either academic or non-academic. </p>
+                <a href="/web_about/" class="filled-button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-info">
+      <div class="container">
+        <div class="section-heading">
+          <h2 style="color:#a4c639;"> Jobs News updates</h2>
+        </div>
+
+        <div class="row" id="divNews">
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="callback-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <br><br><br><br><br><h2>Request a <em>call back</em></h2>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="txtName" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="txtEmail"  placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="txtSubject" placeholder="Subject" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="txtMessage" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="button" id="btn_submit" class="border-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-item">
+            <h4>Training & Placement Cell</h4>
+            <ul class="social-icons">
+              <li><a rel="nofollow" href="https://www.facebook.com/MCABIT1997/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/Dept_MCA_BIT" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/bangalore-institute-of-technology-master-of-computer-applications/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/mcabit_1997/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://www.youtube.com/channel/UCRAWKJtrJZjbJg2aHo3ZiKQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+            
+            
+          </div>
+          <div class="col-md-4 footer-item">
+            <h4>College</h4>
+              <p>Bangalore Institute of Technology</p>
+              <p>Bangalore, Karnataka 560004</p>
+              <p>bitmca2022@gmail.com</p>
+              <p>+91 333 4040 5566</p>
+          </div>
+          <div class="col-md-4 footer-item">
+            <h4>Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="/web_about/">About Us</a></li>
+              <li><a href="/web_job/">Jobs</a></li>
+              <li><a href="/web_workshop/">Workshop</a></li>
+              <li><a href="/web_contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+                Copyright © <script>document.write(new Date().getFullYear())</script><a href="#"> Training and Placement Cell</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'web_js/jquery.min.js' %}"></script>
+    <script src="{% static 'web_js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Additional Scripts -->
+    <script src="{% static 'web_js/custom.js' %}"></script>
+    <script src="{% static 'web_js/owl.js' %}"></script>
+    <script src="{% static 'web_js/slick.js' %}"></script>
+    <script src="{% static 'web_js/accordions.js' %}"></script>
+    <script src="{% static 'web_js/accordions.js' %}"></script>
+    <script src="{% static 'web_js/accordions.js' %}"></script>
+    <script src="{% static 'js/jsWeb_index.js' %}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+
+    </script>
+    <script type="text/javascript">
+
+        function loadJob() {
+
+          var formData = new FormData();
+          formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+
+              $.ajax({
+
+                  url: "/get_job_details/",
+                  type: "POST",
+                  data: formData,
+                  processData: false,
+                  contentType: false,
+                  success: function(response) {
+
+                      let lclJSON;
+                       try {
+                       lclJSON  = JSON.parse(response)
+                      } catch(e) {
+                        lclJSON = response
+                      }
+
+                      var subTotal = 0;
+                      for(var i = 0; i < lclJSON.length; i++) {
+                        // var imgSub = response[i].jb_image.substring(20);
+                    
+                        var res = lclJSON[i].jb_des.substring(0, 75);
+
+                        $("#job").append(' <div class="col-sm-4" style="height: 446px !important;width: 971px !important;"><div class="service-item"><img src="{% static 'images/placement_cell1.jpg' %}" alt="" style="width: 322px;"><div class="down-content"><h4>'+lclJSON[i].jb_title+'</h4><div style="margin-bottom:10px;"><span> <sup>₹</sup>'+lclJSON[i].jb_package+'  </span></div><p>'+res+'</p><p style="font-weight:bold;color:blue;">'+lclJSON[i].jb_company+'</p><a href="/web_applyjob?id='+lclJSON[i].jb_id+'" class="btn" style="margin-top: -18px; background-color: #a4c639; color: white;">Read More</a></div></div> <br><br></div>');
+                      }
+                    }
+
+              });          
+          }
+
+        function loadNewsDetails() {
+
+          var formData = new FormData();
+          formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+
+              $.ajax({
+
+                  url: "/get_news_details/",
+                  type: "POST",
+                  data: formData,
+                  processData: false,
+                  contentType: false,
+                  success: function(response) {
+
+                     let lclJSON;
+                         try {
+                         lclJSON  = JSON.parse(response)
+                        } catch(e) {
+                          lclJSON = response
+                        }
+
+                      for(var i = 0; i < lclJSON.length; i++) {
+
+                        var imgSub = response[i].na_image.substring(26);
+                        var res = lclJSON[i].na_content.substring(0, 100);
+
+                        if(i < 3) {
+                          $("#divNews").append('<div class="col-md-4" style="width: 200px; height: 352px;"><section class="tabs-content"> <article id=""> <img src="{{baseURL}}'+imgSub+'"  alt="" style="width: 100%;height: 240px;"><h4><a href="/web_news_details/?id='+lclJSON[i].na_id+'" id="link">'+lclJSON[i].na_title+'</a></h4><p>'+res+'</p></article></section></div>');
+                        } else {
+                          $("#divNews").append('<div class="col-md-4" style="width: 200px; height: 352px; position: relative; top: 50px;"><section class="tabs-content"> <article id=""> <img src="{{baseURL}}'+imgSub+'"  alt="" style="width: 100%;height: 240px;"><h4><a href="/web_news_details/?id='+lclJSON[i].na_id+'" id="link">'+lclJSON[i].na_title+'</a></h4><p>'+res+'</p></article></section></div>');
+                        }
+                                                
+                      }
+                    }
+
+              });          
+        }
+
+        loadJob();
+        loadNewsDetails();
+
+    </script>
+ 
+
+
+  </body>
+</html>
+
+   <script>
+        AOS.init();
+    </script>

@@ -1,0 +1,82 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+     <link rel="stylesheet" href="{% static 'web_css/style1.css' %}" rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+
+      <form action="#" class="login-form">
+        <h1>Register</h1>
+
+        <div class="txtb">
+          <input type="text" id="txtName">
+          <span data-placeholder="Name"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="text" id="txtUsn">
+          <span data-placeholder="Usn"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="text" id="txtEmail">
+          <span data-placeholder="Email"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="text" id="txtTot_avg">
+          <span data-placeholder="Total Average"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="text" id="txtBranch">
+          <span data-placeholder="Branch"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="text" id="txtSemister">
+          <span data-placeholder="Semister"></span>
+        </div>
+
+        <div class="txtb">
+          <span data-placeholder="Resume">Resume</span>
+          <input type="file" id="txtFile">
+        </div>
+
+        <div class="txtb">
+          <input type="password" id="txtPass">
+          <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="submit" class="regBtn" id="btn_submit" value="Regsiter">
+
+        <div class="bottom-text">
+          Already have account? <a href="#">Login</a>
+        </div>
+
+      </form>
+
+    <script src="{% static 'js/jsWebRegister.js' %}"></script>
+
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+
+  </body>
+</html>

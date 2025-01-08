@@ -1,0 +1,292 @@
+{% load static %}
+{% csrf_token %}
+{% static "" as baseURL %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Training and Placement Cell</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'web_css/bootstrap.min.css' %}" rel='stylesheet' type='text/css' />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'web_css/fontawesome.css' %}" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{% static 'web_css/style.css' %}" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{% static 'web_css/owl.css' %}" rel='stylesheet' type='text/css' />
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+   <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-envelope"></i>contact@company.com</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>123-456-7890</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/web_index"><h2>Training And <em>Placement Cell</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/web_index/">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/web_job/">Jobs</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Details</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/web_campus/">Campus Details</a>
+                    <a class="dropdown-item" href="/web_company/">Company Details</a>
+                    <a class="dropdown-item" href="/web_placement/">Placement Details</a>
+                    <a class="dropdown-item" href="/web_study/">Study Material</a>
+                    <a class="dropdown-item" href="/web_workshop/">Workshop Details</a>
+                    <a class="dropdown-item" href="/test/">Take Test</a>
+                    <a class="dropdown-item" href="/result/">Test Result</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/web_about/">About Us</a>
+                    <a class="dropdown-item" href="/web_news/">News</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/web_contact/">Contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <input type="hidden" id="txtJobID" value="{{request.GET.id}}">
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Job Details</h1>
+            <!-- <span>Lorem ipsum dolor sit amet.</span> -->
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="content-job" id="jobDetails">
+      <div class="job_description__head" id="">
+        <div class="job_description_content">
+          <br>
+          <h2 id="jobTitle">PHP Developer</h2>
+          <p class="p-content" id="companyName">Infynow Business solutions LLP</p>
+          <p>
+            <span style="color: white;"><i class="fa fa-map-marker" aria-hidden="true" id="location"> </i> Banglore</span>
+          </p><br>
+          <button type="button" id="apply_job" class="btn btn-warning">
+            Apply Now
+          </button>
+        </div> <br><br><br>
+
+        <div class="job_description_content2">
+          <h2 style="color: black;">Job Details:-</h2>
+          <p>As a PHP Developer your primary focus will be the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end. You will also be responsible for integrating the front-end elements built by your co-workers into the application. Therefore, a basic understanding of front-end technologies is necessary as well</p><hr>
+          <h2 style="color: black;">Job Requirements:-</h2>
+          <p>Good knowledge of any PHP web frameworks such as Laravel, YII, Zend, Symphony, Magento, Codeigniter, Opencart, Shopify etc.
+          Understanding of MVC design patterns
+          Good Knowledge and relevant work experience in CSS, HTML5, MySQL, HTML/ XHTML, XML, JavaScript and Jquery.
+          Experience of working on REST, SOAP, OAuth and 3rd party API/ Connectors</p><hr>
+        
+        <h4  style="color: black;">Salary:-</h4>
+      </div>
+
+    </div>  
+
+    </div><br>
+
+
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-item">
+            <h4>Training & Placement Cell</h4>
+            <ul class="social-icons">
+              <li><a rel="nofollow" href="https://www.facebook.com/MCABIT1997/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/Dept_MCA_BIT" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/bangalore-institute-of-technology-master-of-computer-applications/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/mcabit_1997/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://www.youtube.com/channel/UCRAWKJtrJZjbJg2aHo3ZiKQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+            
+            
+          </div>
+          <div class="col-md-4 footer-item">
+            <h4>College</h4>
+              <p>Bangalore Institute of Technology</p>
+              <p>Bangalore, Karnataka 560004</p>
+              <p>bitmca2022@gmail.com</p>
+              <p>+91 333 4040 5566</p>
+          </div>
+          <div class="col-md-4 footer-item">
+            <h4>Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="/web_about/">About Us</a></li>
+              <li><a href="/web_job/">Jobs</a></li>
+              <li><a href="/web_workshop/">Workshop</a></li>
+              <li><a href="/web_contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+                Copyright © <script>document.write(new Date().getFullYear())</script><a href="#">Training and Placement Cell</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'web_js/jquery.min.js' %}"></script>
+    <script src="{% static 'web_js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Additional Scripts -->
+    <script src="{% static 'web_js/custom.js' %}"></script>
+    <script src="{% static 'web_js/owl.js' %}"></script>
+    <script src="{% static 'web_js/slick.js' %}"></script>
+    <script src="{% static 'web_js/accordions.js' %}"></script>
+    <script src="{% static 'web_js/accordions.js' %}"></script>
+    <script src="{% static 'web_js/accordions.js' %}"></script>
+    <!-- <script src="{% static 'js/jsWebCompany.js' %}"></script> -->
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>
+<script type="text/javascript">
+
+          function applyJob() {
+
+            $("#apply_job").prop("disabled", true);
+            $("#apply_job").text('Applying...');
+
+            var formData = new FormData();
+            formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());
+            formData.append("txtJobID", $("#txtJobID").val());
+
+            $.ajax({
+              url: "/apply_job/",
+              type: "POST",
+              data: formData,
+              processData: false,
+              contentType: false,
+              success: function(response) {
+
+                if(response == 10) {
+                  alert("Please Login to Apply");
+                  window.location = "/web_login/";
+                } else if(response == 100) {
+                    alert("You are already applied for this job");
+                } else {
+                  alert("Thank you for Applying Job");
+                  window.location = "/web_index/";
+                }
+
+              }
+
+            });
+       
+          }
+
+        function loadJobDetails() {
+
+          var formData = new FormData();
+          formData.append("txtJobID", $("#txtJobID").val());
+          formData.append("csrfmiddlewaretoken", $('input[name=csrfmiddlewaretoken]').val());     
+
+              $.ajax({
+
+                  url: "/get_single_job_details/",
+                  type: "POST",
+                  data: formData,
+                  processData: false,
+                  contentType: false,
+                  success: function(response) {
+
+                    // var lclJSON = JSON.parse(response);
+                    // if(lclJSON.length != 0) {
+                      $("#jobDetails").empty();
+                      var subTotal = 0;
+                      // for(var i = 0; i < response.length; i++) {
+                        $("#jobDetails").append('<div class="job_description__head" id=""><div class="job_description_content"><br><h2>'+response[0].jb_title+'</h2><p class="p-content">'+response[0].jb_company+'</p><p style="color: white;"> <i class="fa fa-inr" aria-hidden="true"> '+response[0].jb_package+' </i>&nbsp;&nbsp; <span><i class="fa fa-map-marker" aria-hidden="true"></i> '+response[0].jb_loc+'</span></p><br> <button type="button" class="btn btn-warning" id="apply_job" onclick="applyJob();"> Apply Now </button></div> <br><br><br><div class="job_description_content2"><h2 style="color: black;">Job Details:-</h2><p>'+response[0].jb_des+'</p><hr><h2 style="color: black;">Job Requirements:-</h2><p>'+response[0].jb_skills+'</p><hr><h2 style="color: black;">Educational Qualification:-</h2><p>B.Tech/B.E.(IT/Computers), B.Sc (Computers), MSc (IT), BCA (Computer), MCA (Computer) or any equivalent graduation or post-graduation</p></div></div>');
+                      // }
+                    }
+
+              });          
+        }
+
+        loadJobDetails();
+
+</script>
